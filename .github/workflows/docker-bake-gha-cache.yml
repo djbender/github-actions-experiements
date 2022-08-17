@@ -26,5 +26,5 @@ jobs:
         uses: docker/bake-action@v2.2.0
         with:
           pull: true
-          push: ${{ github.reb == 'refs/heads/main' }}
+          push: ${{ github.ref == 'refs/heads/main' }}
           files: docker-bake-gha-cache/docker-bake.hcl
