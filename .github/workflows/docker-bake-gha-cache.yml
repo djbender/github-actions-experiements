@@ -4,7 +4,8 @@ on:
   push: {}
 
 jobs:
-  docker:
+  docker-bake-gha-cache:
+    name: "Docker Bake GHA Cache"
     runs-on: ubuntu-latest
     steps:
       -
