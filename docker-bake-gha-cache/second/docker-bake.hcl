@@ -12,7 +12,7 @@ target "second" {
   tags = ["ghcr.io/djbender/github-actions-experiments:docker-bake-gha-cache-second"]
   platforms = ["linux/amd64", "linux/arm64"]
   cache-from = [
-    "type=gha"
+    "type=gha,scope=second"
   ]
   cache-to = [
     "type=gha,mode=max,scope=second"

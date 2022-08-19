@@ -12,7 +12,7 @@ target "first" {
   tags = ["ghcr.io/djbender/github-actions-experiments:docker-bake-gha-cache-first"]
   platforms = ["linux/amd64", "linux/arm64"]
   cache-from = [
-    "type=gha"
+    "type=gha,scope=first"
   ]
   cache-to = [
     "type=gha,mode=max,scope=first"
