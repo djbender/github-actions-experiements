@@ -4,7 +4,7 @@ on:
   push: {}
 
 jobs:
-  1st-docker-bake-gha-cache:
+  first-docker-bake-gha-cache:
     name: "1st Docker Bake GHA Cache"
     runs-on: ubuntu-latest
     steps:
@@ -30,9 +30,9 @@ jobs:
           files: |
             docker-bake-gha-cache/first/docker-bake.hcl
 
-  2nd-docker-bake-gha-cache:
+  second-docker-bake-gha-cache:
     name: "2nd Docker Bake GHA Cache"
-    needs: 1st-docker-bake-gha-cache
+    needs: first-docker-bake-gha-cache
     runs-on: ubuntu-latest
     steps:
       -
