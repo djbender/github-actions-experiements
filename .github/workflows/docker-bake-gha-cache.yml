@@ -27,4 +27,5 @@ jobs:
         with:
           pull: true
           push: ${{ github.ref == 'refs/heads/main' }}
-          files: docker-bake-gha-cache/docker-bake.hcl
+          files: |
+            docker-bake-gha-cache/docker-bake.hcl
